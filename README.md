@@ -1,3 +1,11 @@
+# Cyber OpenWrt 21.02.1
+
+基础环境初始化 sudo ./init_build.sh
+./scripts/feeds update -a
+./scripts/feeds install -a
+make menuconfig
+make -j$(($(nproc) + 1)) V=s
+
 ![OpenWrt logo](include/logo.png)
 
 OpenWrt Project is a Linux operating system targeting embedded devices. Instead
