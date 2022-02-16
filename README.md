@@ -9,8 +9,6 @@ make menuconfig
 make -j$(($(nproc) + 1)) V=s
 ```
 
-===
-
 ![OpenWrt logo](include/logo.png)
 
 OpenWrt Project is a Linux operating system targeting embedded devices. Instead
