@@ -24,7 +24,7 @@ class Github
       self.upload(assets_url, file_path, entry)
     end
 
-    self.upload(assets_url, "./.config", "./.config")
+    self.upload(assets_url, "./.config", "config")
   end
 
   def upload(url, entry, name)
