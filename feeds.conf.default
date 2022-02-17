@@ -5,3 +5,5 @@ src-git telephony https://git.openwrt.org/feed/telephony.git^ed2719867150a9bfc85
 
 src-git passwall https://github.com/xiaorouji/openwrt-passwall
 src-git netmaker http://github.com/sbilly/netmaker-openwrt.git
+
+src-git cyber https://github.com/mjason/cyber-openwrt-packages.git
