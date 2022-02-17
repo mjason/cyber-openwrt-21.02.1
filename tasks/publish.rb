@@ -24,15 +24,17 @@ class Github
       self.upload(assets_url, file_path, entry)
     end
 
-    self.upload(assets_url, "./config", "./config")
+    self.upload(assets_url, "./.config", "./.config")
   end
 
   def upload(url, entry, name)
+    puts "start #{entry} done"
     file = File.open(entry)
     content_type = Marcel::MimeType.for file
     @client
       .headers(content_type: content_type)
-      .post(assets_url, query: {name: name},body: file)
+      .post(url, params: {name: name},body: file)
+    puts "upload #{entry} done"
   end
 
   def files
